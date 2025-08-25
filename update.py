@@ -249,20 +249,6 @@ async def main():
                     f.write(entry)
     print(f"Datos guardados: {len(tramites_sorted)} trámites | {len(errores)} errores.")
 
-<<<<<<< HEAD
-=======
-    tramites, errores_tramites = await getTramites(tramitesListado)
-    tramites_sorted = sorted(tramites, key=lambda d: d["id_tramite"])
-    for data, filename in zip(
-        [tramites_sorted, errores_tramites], ["tramites", "errores"]
-    ):
-        if data:
-            with open(f"{filename}.json", "w", encoding="utf-8") as f:
-                for entry in data:
-                    json_line = json.dumps(entry, ensure_ascii=False)
-                    f.write(json_line + "\n")
-    print(f"Detalles guardados: {len(tramites_sorted)} trámites | {len(errores_tramites)} errores.")
->>>>>>> 4aa06d6 (switch to json lines for better git diffs)
 
 if __name__ == "__main__":
     asyncio.run(main())
