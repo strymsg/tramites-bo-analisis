@@ -5,12 +5,20 @@ name = "pypi"
 
 [packages]
 requests = "*"
+<<<<<<< HEAD
 httpx = {extras = ["http2"], version = "*"}
 asyncio = "*"
 tqdm = "*"
 jsonlines = "*"
 pandas = "*"
 deepdiff = "*"
+=======
+asyncio = "*"
+tdqm = "*"
+jsonlines = "*"
+pandas = "*"
+httpx = {extras = ["http2"], version = "*"}
+>>>>>>> 8fd723e (Renombrando variables y verificacion cuando no hay modificaciones)
 
 [dev-packages]
 
