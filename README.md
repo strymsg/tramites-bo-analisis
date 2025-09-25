@@ -16,16 +16,4 @@ Incluye:
 - [Datos de cada trámite en su forma original en formato jsonl](tramites.jsonl). Obtenidos a partir del proyecto [tramites-bo](https://github.com/datosbolivia/tramites-bo).
 - [Datos de cada trámite en formato csv](tramites.csv). Generado a partir de tramites.jsonl y el [notebooks/preprocessing_1.ipynb](notebooks/preprocessing_1.ipynb)
 - Especificación de los datos en [datapackage.json](datapackage.json)
-=======
-# Obtención de trámites del portal gob.bo
-
-Los trámites se obtienen en el archivo `tramites.jsonl` ejecutando `update.py`.
-
-## Ejecución local
-
-Si quieres ejecutar en tu máquina, luego de clonar este repositorio puedes instalar las dependencias con pipenv.
-
-1. `pipenv shell`
-2. `pipenv install`
-3. `python update.py`
 
