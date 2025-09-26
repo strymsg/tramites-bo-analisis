@@ -1,11 +1,22 @@
 ---
+configs:
+- config_name: default
+  data_files:
+  - split: csv
+    path: "tramites.csv"
+	sep: ","
+	default: true
+  - split: jsonl
+    path: "tramites.jsonl"
+	sep: "\n"
+
 license: cc0-1.0
 language:
 - es
 tags:
 - legal
 - finance
-pretty_name: trámites-bo del protal www.gob.bo
+pretty_name: trámites-bo del portal www.gob.bo
 size_categories:
 - 1M<n<10M
 ---
