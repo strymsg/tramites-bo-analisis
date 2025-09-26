@@ -4,8 +4,6 @@ configs:
     data_files:
     - split: train
       path: tramites.csv
-    - split: test
-      path: tramites.jsonl
 license: cc0-1.0
 language:
   - es
