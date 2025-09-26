@@ -2,13 +2,10 @@
 configs:
   - config_name: default
     data_files:
-      - split: train
-        path: tramites.csv
-        sep: ","
-        default: true
-      - split: train
-        path: tramites.jsonl
-        sep: "\n"
+    - split: train
+      path: tramites.csv
+    - split: test
+      path: tramites.jsonl
 license: cc0-1.0
 language:
   - es
