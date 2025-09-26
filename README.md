@@ -4,11 +4,11 @@ configs:
   data_files:
   - split: csv
     path: "tramites.csv"
-	sep: ","
-	default: true
+    sep: ","
+    default: true
   - split: jsonl
     path: "tramites.jsonl"
-	sep: "\n"
+    sep: "\n"
 
 license: cc0-1.0
 language:
