@@ -1,25 +1,26 @@
 ---
 configs:
-- config_name: default
-  data_files:
-  - split: csv
-    path: "tramites.csv"
-    sep: ","
-    default: true
-  - split: jsonl
-    path: "tramites.jsonl"
-    sep: "\n"
-
+  - config_name: default
+    data_files:
+      - split: train
+        path: tramites.csv
+        sep: ","
+        default: true
+      - split: train
+        path: tramites.jsonl
+        sep: "\n"
 license: cc0-1.0
 language:
-- es
+  - es
 tags:
-- legal
-- finance
+  - legal
+  - finance
 pretty_name: trámites-bo del portal www.gob.bo
 size_categories:
-- 1M<n<10M
+  - 1M<n<10M
+
 ---
+
 Análisis de datos de trámites en entidades del gobierno boliviano tomados directamente del [portal oficial](https://gob.bo) y publicados como datos abiertos y de libre uso. Este es un trabajo derivado del proyecto [https://github.com/datosbolivia/tramites-bo](https://github.com/datosbolivia/tramites-bo).
 
 Incluye:
