@@ -256,6 +256,239 @@
         ],
         "primaryKey": "id"
       }
+    },
+    {
+      "name": "tramites-desglosados-csv",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "path": "tramites_desglosados.csv",
+      "schema": {
+	"fields": [
+	  {
+	    "name": "id",
+	    "type": "integer",
+            "constraints": {
+              "required": true,
+              "unique": true
+            },
+	    "description": "Identificador único de trámite"
+	  },
+	  {
+            "name": "estado",
+            "type": "string"
+          },
+          {
+            "name": "slug",
+            "type": "string"
+          },
+	  {
+            "name": "sigla",
+            "type": "string",
+	    "description": "Sigla que se le da al trámite"
+          },
+	  {
+	    "name": "descripcion",
+	    "type": "string",
+	    "description": "Descripción corta del trámite"
+	  },
+	  {
+            "name": "marcoLegal",
+            "type": "string"
+          },
+          {
+            "name": "like",
+            "type": "integer"
+          },
+          {
+            "name": "dislike",
+            "type": "integer"
+          },
+          {
+            "name": "esPresencial",
+            "type": "integer"
+          },
+          {
+            "name": "resultado",
+            "type": "string"
+          },
+          {
+            "name": "enlaces",
+            "type": "array"
+          },	  
+	  {
+            "name": "ubicaciones",
+            "type": "array"
+          },
+	            {
+            "name": "entidad.nombre",
+            "type": "string"
+          },
+          {
+            "name": "entidad.sigla",
+            "type": "string"
+          },
+          {
+            "name": "entidad.slug",
+            "type": "string"
+          },
+          {
+            "name": "entidad.logo",
+            "type": "string"
+          },
+          {
+            "name": "entidad.descripcion",
+            "type": "string"
+          },
+          {
+            "name": "entidad.urlSitioWeb",
+            "type": "string"
+          },
+          {
+            "name": "entidad.telefonoContacto",
+            "type": "string"
+          },
+          {
+            "name": "entidad.correoElectronicoContacto",
+            "type": "string"
+          },
+	  {
+	    "name": "palabrasCalve",
+	    "type": "string",
+	    "description": "Palabras clave separadas por coma",
+	    "example": "Documentos,Superiores,Certificación,Escuelas,Formación,Maestros"
+	  },
+	  {
+            "name": "categorias",
+            "type": "string",
+	    "description": "Categorías del trámite separadas por coma",
+	    "example": "Justicia,Medio ambiente,Transporte,Vivienda,Empresas"
+          },
+	  {
+            "name": "eventosVida",
+            "type": "string",
+	    "description": "Eventos Vida del trámite separadas por coma",
+	    "example": "Jubilación,Empleo,Herencia"
+          },
+          {
+            "name": "documentos",
+            "type": "string"	    
+          },
+          {
+            "name": "herramientas",
+            "type": "string"	    
+          },
+          {
+            "name": "modalidad.tipo",
+            "type": "string",
+	    "description": "Modalidad de realización del trámite"
+          },
+	  {
+	    "name": "tramite.url",
+	    "type": "string"
+	  },
+	  {
+	    "name": "tramite.urlSeguimiento",
+	    "type": "string"
+	  },
+	  {
+	    "name": "tramite.urlSeguimiento",
+	    "type": "string"
+	  },
+	  {
+	    "name": "tramite.tieneCosto",
+	    "type": "integer",
+	    "description": "1 si el procedimiento tiene costo, 0 en otro caso."
+	  },
+	  {
+	    "name": "tramite.duracion",
+	    "type": "integer",
+	    "description": "Duración del trámite en la unidad especificada en tramite.unidadMedidaDuracion"
+	  },
+          {
+            "name": "tramite.unidadMedidaDuracion",
+            "type": "string",
+	    "description": "Unidad de medida de la duración del trámite"
+          },
+          {
+            "name": "tramite.procedimiento",
+            "type": "string",
+	    "description": "Procedimiento del trámite como cadena HTML"
+          },
+          {
+            "name": "tramite.publicoObjetivo",
+            "type": "string",
+	    "description": "Nombre del público a quien va dirigido este procedimiento"
+          },
+          {
+            "name": "tramite.requisitoNoParametrizado",
+            "type": "string"
+          },
+          {
+            "name": "tramite.estado",
+            "type": "string"
+          },
+          {
+            "name": "tramite.emisionFactura",
+            "type": "string"
+          },
+          {
+            "name": "tramite.formaCobro",
+            "type": "array"
+          },
+          {
+            "name": "tramite.horarios",
+            "type": "array"
+          },
+          {
+            "name": "tramite.depositoBancario",
+            "type": "array"
+          },
+          {
+            "name": "tramite.duracionMin",
+            "type": "number",
+	    "description": "Duración del trámite expresada en minutos"
+          },
+          {
+            "name": "tramite.duracionHora",
+            "type": "number",
+	    "description": "Duración del trámite expresada en horas"	    
+          },
+          {
+            "name": "tramite.duracionDia",
+            "type": "number",
+	    "description": "Duración del trámite expresada en días"
+          },
+          {
+            "name": "costo.conceptoPago",
+            "type": "string"
+          },
+          {
+            "name": "costo.monto",
+            "type": "number",
+	    "description": "Costo del trámite en la moneda especificada en costo.moneda"
+          },
+          {
+            "name": "costo.moneda",
+            "type": "string"
+          },
+          {
+            "name": "requisito.comentario",
+            "type": "string"
+          },
+          {
+            "name": "requisito.nombre",
+            "type": "string"
+          },
+          {
+            "name": "requisito.entidad",
+            "type": "string"
+          },
+          {
+            "name": "requisito.entidadActiva",
+            "type": "integer"
+          }
+	]
+      }
     }
   ]
 }
