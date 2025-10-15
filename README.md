@@ -20,7 +20,7 @@ Análisis de datos de trámites en entidades del gobierno boliviano tomados dire
 
 Incluye:
 
-- [Datos de cada trámite en formato csv](tramites.csv). Generado a partir de tramites.jsonl y el [notebooks/preprocessing_1.ipynb](notebooks/preprocessing_1.ipynb)
-- [Datos de trámites desglosados para facilitar su análisis](tramites_desglosados.csv). Generado desde tramites.csv y el notebook [notebooks/Desglose.ipynb](notebooks/Desglose.ipynb)
+- [Datos de cada trámite en formato csv - tramites.csv](tramites.csv). Generado a partir de tramites.jsonl y el [notebooks/preprocessing_1.ipynb](notebooks/preprocessing_1.ipynb)
+- [Datos de trámites desglosados para facilitar su análisis en formato csv - tramites_desglosados.csv](tramites_desglosados.csv). Generado desde tramites.csv y el notebook [notebooks/Desglose.ipynb](notebooks/Desglose.ipynb)
 - Especificación de los datos en [datapackage.json](datapackage.json)
 - [Datos de cada trámite en su forma original en formato jsonl](tramites.jsonl). Obtenidos a partir del proyecto [tramites-bo](https://github.com/datosbolivia/tramites-bo).
