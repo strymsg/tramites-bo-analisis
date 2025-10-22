@@ -24,3 +24,11 @@ Incluye:
 - [Datos de trámites desglosados para facilitar su análisis en formato csv - tramites_desglosados.csv](tramites_desglosados.csv). Generado desde tramites.csv y el notebook [notebooks/Desglose.ipynb](notebooks/Desglose.ipynb)
 - Especificación de los datos en [datapackage.json](datapackage.json)
 - [Datos de cada trámite en su forma original en formato jsonl](tramites.jsonl). Obtenidos a partir del proyecto [tramites-bo](https://github.com/datosbolivia/tramites-bo).
+
+Si descargaste este proyecto con `git` para descargar todos los archivos de datos usa:
+
+```sh
+git lfs fetch --all
+git lfs pull
+```
+
